@@ -1,0 +1,99 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: var(--background);
+  --color-nav: var(--nav);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+
+  --color-muted: var(--muted);
+
+  --color-ice: var(--ice);
+  --color-pinky: var(--pinky);
+
+  --animate-fade-in-right: fade-in-right 0.7s ease;
+  --animate-fade-in-up: fade-in-up 0.7s ease;
+
+  --animate-btn: btn 0.6s ease-in-out;
+  --animate-fill: fill 0.6s ease;
+
+  @keyframes fade-in-right {
+    0% {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes fade-in-up {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes btn {
+    0% {
+      transform-origin: top center;
+      transform: rotateX(-90deg);
+      opacity: 0;
+    }
+    100% {
+      transform-origin: top center;
+      transform: rotateX(0deg);
+      opacity: 1;
+    }
+  }
+
+  @keyframes fill {
+    0% {
+      transform: scale(0);
+      border-radius: 50%;
+      opacity: 0.5;
+    }
+    50% {
+      transform: scale(1.5, 0.2);
+      border-radius: 50%;
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1, 1);
+      border-radius: 0;
+      opacity: 1;
+    }
+  }
+}
+
+@layer base {
+  :root {
+    --background: #ffffff;
+    --foreground: #1b2d63;
+    --nav: ;
+    --primary: #2fca7e;
+    --muted: #9ca1a4;
+    --ice: #c7f1de;
+    --pinky: #ffcfc8;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground transition-colors duration-300;
+    font-feature-settings: "rlig" 1, "calt" 1;
+    background-color: #fcfbfe;
+    /* font-weight: 100; */
+  }
+}
