@@ -1,0 +1,22 @@
+import { AcheivementCard } from "./AcheivementCard";
+
+export const AchievementSection = () => {
+  return (
+    <section className="flex flex-col items-center py-4 px-10 md:px-25 my-10 w-full gap-8">
+      <div className="container">
+        <div className="flex items-center gap-2">
+          <h4 className="font-semibold text-primary text-xs uppercase tracking-widest">Some Fun Fact</h4>
+          <span className="bg-primary h-[1px] w-20 rounded"></span>
+        </div>
+        <h2 className="text-4xl font-bold">
+          Our Great <span className="text-primary underline">Achievement</span>
+        </h2>
+      </div>
+
+      
+      <div className="w-full mt-3 ">
+        <AcheivementCard />
+      </div>
+    </section>
+  );
+};

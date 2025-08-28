@@ -26,7 +26,7 @@ export const HeroCards = () => {
     <div
       ref={ref}
       className={cn(
-        "grid grid-cols-1 md:grid-cols-3 gap-2 mt-2 md:gap-[2px] md:mt-[2px]",
+        "grid grid-cols-1 md:grid-cols-3 gap-3 mt-2 md:gap-[2px] md:mt-[2px]",
         isVisible ? "animate-fade-in-up" : "opacity-0"
       )}
     >

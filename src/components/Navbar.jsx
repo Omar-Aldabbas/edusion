@@ -70,7 +70,7 @@ export const Navbar = () => {
 
           <Link
             to="/signup"
-            className="px-6 py-2 rounded-full outline outline-gray-400 hover:outline-none hover:bg-primary hover:text-background"
+            className="px-6 py-2 rounded-full outline outline-gray-200 hover:outline-none hover:bg-primary hover:text-background"
           >
             Sign Up
           </Link>
@@ -133,7 +133,7 @@ export const Navbar = () => {
           </Link>
           <Link
             to="/signup"
-            className="px-6 py-2 rounded-full outline outline-white hover:outline-none hover:bg-white hover:text-primary"
+            className="px-6 py-2 rounded-full outline-[1px] outline-gray-100 hover:outline-none hover:bg-white hover:text-primary"
           >
             Sign Up
           </Link>

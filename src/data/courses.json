@@ -1,0 +1,124 @@
+[
+  {
+    "id": 1,
+    "price": "$265",
+    "category": "Business",
+    "title": "Financial Security Thinking and Principles Theory",
+    "lessons": 6,
+    "duration": "4 hours",
+    "rating": 4.50,
+    "level": "All Levels",
+    "mainPic": "Course1.png"
+  },
+  {
+    "id": 2,
+    "price": "$250",
+    "category": "Finance",
+    "title": "Professional Ceramic Moulding for Beginners",
+    "lessons": 15,
+    "duration": "4 hours",
+    "rating": 5.00,
+    "level": "All Levels",
+    "mainPic": "Course2.png"
+  },
+  {
+    "id": 3,
+    "price": "Free",
+    "category": "UI/UX Design",
+    "title": "Basic Fundamentals of Interior & Graphics Design",
+    "lessons": 16,
+    "duration": "22 hours 30 minutes",
+    "rating": 5.00,
+    "level": "Intermediate",
+    "mainPic": "Course3.png"
+  },
+  {
+    "id": 4,
+    "price": "Free",
+    "category": "Digital Program",
+    "title": "WordPress for Beginners – Master WordPress",
+    "lessons": 15,
+    "duration": "7 hours 30 minutes",
+    "rating": 4.33,
+    "level": "Beginner",
+    "mainPic": "Course4.png"
+  },
+  {
+    "id": 5,
+    "price": "$300",
+    "category": "Data Science",
+    "title": "The Complete Python Course for Beginner 2023",
+    "lessons": 14,
+    "duration": "18 hours 20 minutes",
+    "rating": 4.00,
+    "level": "Intermediate",
+    "mainPic": "Course5.png"
+  },
+  {
+    "id": 6,
+    "price": "Free",
+    "category": "UI/UX Design",
+    "title": "Ultimate Photoshop Training: From Beginner",
+    "lessons": 14,
+    "duration": "13 hours 20 minutes",
+    "rating": 3.33,
+    "level": "All Levels",
+    "mainPic": "Course6.png"
+  },
+  {
+    "id": 7,
+    "price": "Free",
+    "category": "Modern Physics",
+    "title": "User Experience Design Essentials Adobe XD UI UX Design",
+    "lessons": 15,
+    "duration": "10 hours 40 minutes",
+    "rating": 4.50,
+    "level": "Beginner",
+    "mainPic": "Course7.png"
+  },
+  {
+    "id": 8,
+    "price": "$180",
+    "category": "Modern Physics",
+    "title": "Basic Fundamentals of Interior & Graphics Design",
+    "lessons": 16,
+    "duration": "15 hours 20 minutes",
+    "rating": 5.00,
+    "level": "Beginner",
+    "mainPic": "Course8.png"
+  },
+  {
+    "id": 9,
+    "price": "Free",
+    "category": "Finance / Modern Physics",
+    "title": "Sales Training: Practical Sales Techniques",
+    "lessons": 14,
+    "duration": "2 hours 20 minutes",
+    "rating": 4.00,
+    "level": "Expert",
+    "mainPic": "Course9.png"
+  },
+  {
+    "id": 10,
+    "price": "Free",
+    "category": "Digital Program",
+    "title": "Increasing Engagement with Instagram & Facebook",
+    "lessons": 14,
+    "duration": "3 hours 20 minutes",
+    "rating": 4.50,
+    "level": "Intermediate",
+    "mainPic": "Course10.png"
+  },
+  {
+    "id": 11,
+    "price": "Free",
+    "category": "UI/UX Design",
+    "title": "Introduction to Color Theory & Basic UI/UX",
+    "lessons": 15,
+    "duration": "17 hours 20 minutes",
+    "rating": 4.33,
+    "level": "All Levels",
+    "mainPic": "Course11.png"
+  }
+]
+ 

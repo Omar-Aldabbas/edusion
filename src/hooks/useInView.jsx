@@ -1,23 +1,25 @@
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState, useRef, useMemo } from "react";
 
 export const useInView = (options = {}) => {
   const ref = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
 
+  const memOptions = useMemo(() => options, [JSON.stringify(options)]);
+
   useEffect(() => {
     const observer = new IntersectionObserver(([entry], obs) => {
       if (entry.isIntersecting) {
         setIsVisible(true);
-        obs.unobserve(entry.target); // stop observing this element only
+        obs.unobserve(entry.target);
       }
-    }, options);
+    }, memOptions);
 
     if (ref.current) observer.observe(ref.current);
 
     return () => {
       if (ref.current) observer.unobserve(ref.current);
     };
-  }, [options]);
+  }, [memOptions]);
 
   return [ref, isVisible];
 };
