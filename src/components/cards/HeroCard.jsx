@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export const FeatureCard = ({ title, descr }) => {
   return (
-    <div className="py-7 px-9 bg-white flex flex-col justify-center items-center">
+    <div className="py-7 px-9 bg-white flex flex-col justify-center items-center shadow-md">
       <div className="space-y-4">
         <h2 className="font-bold text-foreground text-md">{title}</h2>
         <p className="text-muted text-xs">{descr}</p>
