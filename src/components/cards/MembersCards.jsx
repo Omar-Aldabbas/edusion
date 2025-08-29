@@ -41,7 +41,7 @@ const membersData = [
 
 export const MembersCards = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center gap-6 w-full">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center gap-6 md:gap-y-34 w-full">
       {membersData.map((member) => (
         <div key={member.id} className="relative ">
           <img
@@ -50,11 +50,11 @@ export const MembersCards = () => {
             className="w-full rounded-lg"
           />
 
-          <div className="absolute -bottom-26 left-1/2 transform -translate-x-1/2 bg-primary w-59 p-3 rounded-lg shadow-lg flex flex-col gap-2 text-background text-center">
-            <span className="font-bold text-lg">{member.name}</span>
+          <div className="absolute -bottom-26 left-1/2 transform -translate-x-1/2 bg-primary w-59 md:w-84 p-3 rounded-lg shadow-lg flex flex-col gap-1 text-background text-center">
+            <span className="font-semibold text-lg cursor-pointer">{member.name}</span>
             <span>{member.job}</span>
 
-            <div className="flex flex-col items-center justify-between">
+            <div className="flex flex-col items-center justify-between text-sm">
               <div className="flex items-center gap-1">
                 <Book size={18} />
                 <span className="underline">{member.courses} Courses</span>
@@ -66,9 +66,9 @@ export const MembersCards = () => {
             </div>
 
             <div className="flex gap-3 mt-2 justify-center">
-              <Facebook className="text-foreground bg-background rounded-full p-2" fill="currentColor" size={28} />
-              <Twitter className="text-foreground bg-background rounded-full p-2" fill="currentColor" size={28} />
-              <Linkedin className="text-foreground bg-background rounded-full p-2" fill="currentColor" size={28} />
+              <Facebook className="text-foreground bg-background rounded-full p-2 hover:text-primary transition-colors duration-300 cursor-pointer" fill="currentColor" size={28} />
+              <Twitter className="text-foreground bg-background rounded-full p-2 hover:text-primary transition-colors duration-300 cursor-pointer" fill="currentColor" size={28} />
+              <Linkedin className="text-foreground bg-background rounded-full p-2 hover:text-primary transition-colors duration-300 cursor-pointer" fill="currentColor" size={28} />
             </div>
           </div>
         </div>

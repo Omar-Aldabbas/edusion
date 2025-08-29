@@ -52,7 +52,7 @@ const newsData = [
 const EventCard = ({ news, hasImage }) => (
   <div
     className={`bg-background overflow-hidden shadow hover:shadow-md
-      ${hasImage ? "rounded-t-lg h-[420px]" : "h-[220px]"}`}
+      ${hasImage ? "rounded-t-lg h-[440px]" : "h-[240px]"}`}
   >
     <div className="relative">
       {news.image ? (
@@ -111,7 +111,7 @@ export const EventCards = () => {
         ))}
       </div>
 
-      <div className="flex flex-col gap-6 md:w-1/3">
+      <div className="flex flex-col  gap-6 md:w-1/3">
         {withoutImage.map((news) => (
           <EventCard key={news.id} news={news} hasImage={false} />
         ))}
