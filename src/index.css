@@ -13,6 +13,7 @@
 
   --animate-fade-in-right: fade-in-right 0.7s ease;
   --animate-fade-in-up: fade-in-up 0.7s ease;
+  --animate-fade-down: fade-down 0.5s ease-out forwards;
 
   --animate-btn: btn 0.6s ease-in-out;
   --animate-fill: fill 0.6s ease;
@@ -67,6 +68,17 @@
       transform: scale(1, 1);
       border-radius: 0;
       opacity: 1;
+    }
+  }
+
+  @keyframes fade-down {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
     }
   }
 }

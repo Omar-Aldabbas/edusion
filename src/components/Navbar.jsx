@@ -27,7 +27,7 @@ export const Navbar = () => {
       className={cn(
         "py-4 px-1 md:px-10 xl:px-40 flex flex-col lg:flex-row justify-between items-center font-semibold cursor-pointer relative text-sm transition-all duration-500",
         isScrolled
-          ? "sticky top-0 bg-background/95 shadow-md z-50"
+          ? "sticky top-0 bg-background/95 shadow-sm z-50 animate-fade-down"
           : "bg-background z-50"
       )}
     >

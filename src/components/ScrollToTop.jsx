@@ -19,7 +19,7 @@ export const ScrollToTop = () => {
       onClick={scrollToTop}
       className={`
         fixed bottom-8 right-8 w-10 h-10 rounded-full bg-primary flex items-center justify-center text-white shadow-lg transition-opacity duration-300
-        ${visible ? "opacity-100" : "opacity-0 pointer-events-none"}
+        ${visible ? "opacity-100 z-50" : "opacity-0 pointer-events-none"}
         hover:scale-110
       `}
     >

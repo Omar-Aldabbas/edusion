@@ -13,7 +13,7 @@ export const AuthPage = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background px-4">
+    <div className="min-h-[50vh] flex items-center justify-center bg-background px-4">
       <div className="w-full max-w-md bg-background rounded-lg shadow-md border-t-4 border-primary p-8">
         <h2 className="text-2xl mb-6">
           {isForgot

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
 import Questions from "../assets/Questions.png";
+import { cn } from "../utils/cn";
 
 const faqData = [
   {
@@ -64,20 +65,29 @@ export const QuestionsSection = () => {
               >
                 <span>{item.question}</span>
                 <ChevronDown
-                  className={`h-5 w-5 transition-transform duration-500 ease-in-out ${
+                  className={cn(
+                    "h-5 w-5 transition-transform duration-500 ease-in-out",
                     activeIndex === index ? "rotate-180 text-primary" : "text-foreground"
-                  }`}
+                  )}
                 />
               </button>
 
               <div
-                className={`px-4 overflow-hidden transition-all duration-500 ease-in-out ${
+                className={cn(
+                  "overflow-hidden transition-all duration-700 ease-in-out",
                   activeIndex === index
-                    ? "max-h-96 opacity-100 py-2"
-                    : "max-h-0 opacity-0 py-0"
-                }`}
+                    ? "max-h-[500px] opacity-100 py-3 px-4"
+                    : "max-h-0 opacity-0 py-0 px-4"
+                )}
               >
-                <p className="text-sm text-black">{item.answer}</p>
+                <div
+                  className={cn(
+                    "transform transition-transform duration-700 ease-in-out",
+                    activeIndex === index ? "translate-y-0" : "-translate-y-2"
+                  )}
+                >
+                  <p className="text-sm text-black">{item.answer}</p>
+                </div>
               </div>
             </div>
           ))}
