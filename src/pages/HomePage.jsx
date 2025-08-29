@@ -3,6 +3,7 @@ import { CareerSection } from "../components/CareerSection";
 import { EventsSection } from "../components/EventsSection";
 import { FeaturesSection } from "../components/FeaturesSection";
 import { HeroSection } from "../components/HeroSection";
+import { MembersSection } from "../components/MembersSection";
 import { PlatformSection } from "../components/PlatfromSection";
 import { SubscribeSection } from "../components/SubscribeSection";
 import { TestimonialsSection } from "../components/TestimonialsSection";
@@ -31,6 +32,7 @@ export const HomePage = () => {
       {/* testonomialsSection */}
       <TestimonialsSection/>
       {/* MembersSection */}
+      <MembersSection/>
       {/* blogSection */}
     </div>
   );
