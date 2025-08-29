@@ -1,6 +1,5 @@
 import { FileText, Clock, Star, Signal } from "lucide-react";
 
-
 export const CourseCard = ({ course }) => {
   return (
     <div className="bg-background overflow-hidden outline outline-gray-200 relative rounded-t-lg">
@@ -11,14 +10,14 @@ export const CourseCard = ({ course }) => {
           className="w-full h-60 object-cover"
         />
 
-        {course.sale && (
-          <div className="absolute top-[10%] left-[10%] bg-primary text-background px-3 py-1 rounded-full text-xs font-bold">
+        {course.price && (
+          <div className="absolute top-6 left-3 bg-primary text-background w-12 h-12 flex items-center justify-center rounded-full text-md font-bold shadow-lg">
             {course.price}
           </div>
         )}
       </div>
 
-      <div className="px-4 py-3">
+      <div className="px-4 py-4">
         <div className="flex flex-wrap gap-2 px-4 ">
           {course.category && (
             <a
@@ -34,7 +33,7 @@ export const CourseCard = ({ course }) => {
           {course.title}
         </h3>
 
-        <div className="flex flex-col px-4 mt-2 gap-2">
+        <div className="flex flex-col px-4 mt-2 gap-2 max-w-[240px]">
           <div className="flex flex-wrap items-center gap-4 text-primary text-xs">
             <div className="flex items-center gap-2">
               <FileText size={16} />
@@ -46,7 +45,7 @@ export const CourseCard = ({ course }) => {
             </div>
 
             <div className="flex items-center gap-2">
-              <Star size={16} fill="currentColor" className="text-primary"/>
+              <Star size={16} fill="currentColor" className="text-primary" />
               <span className="text-foreground">{course.rating}</span>
             </div>
             <div className="flex items-center gap-2 font-bold">

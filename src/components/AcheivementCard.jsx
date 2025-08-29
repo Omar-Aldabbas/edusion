@@ -1,7 +1,6 @@
 import CountUp from "react-countup";
 import { Smile, File, Headphones, User } from "lucide-react";
-import { useInView } from "../hooks/useInView"; // adjust path
-
+import { useInView } from "../hooks/useInView";
 const stats = [
   { icon: Smile, number: 854, text: "Enrolled Students", color: "text-blue-600" },
   { icon: File, number: 521, text: "Academic Programs", color: "text-orange-600" },

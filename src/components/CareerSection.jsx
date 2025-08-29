@@ -1,19 +1,20 @@
 import { Award, Wand } from "lucide-react";
 import Carear from "../assets/Carear.png";
 import { Link } from "react-router-dom";
+import { cn } from "../utils/cn";
 
 export const CareerSection = () => {
   return (
-    <section className="flex justify-center items-center relative py-4 px-5 md:px-25 w-full min-h-screen">
-      <div className="flex flex-col lg:flex-row gap-8 justify-center items-center w-full">
+    <section className={cn("flex justify-center items-center relative py-4 px-5 lg:px-25 w-full min-h-screen md:min-h-[70vh] lg:min-h-screen lg:mt-10")}>
+      <div className="flex flex-col md:flex-row gap-8 md:gap-1 lg:gap-8 justify-center items-center w-full">
         <img
           src={Carear}
           alt="Peaple doing things"
-          className=" w-full max-w-lg p-3"
+          className=" w-full max-w-lg md:max-w-sm lg:max-w-lg p-3"
         />
         <div className="flex flex-col  max-w-2xl gap-8 p-5">
           <div className="space-y-3 md:space-y-7">
-            <h2 className="font-semibold text-4xl md:text-5xl">
+            <h2 className="font-semibold text-3xl md:text-4xl lg:text-5xl capitalize">
               Learn new skills to go{" "}
               <span className="text-primary underline">ahead for your</span>{" "}
               career.

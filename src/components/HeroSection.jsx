@@ -9,8 +9,8 @@ export const HeroSection = () => {
   const [ref, isVisible] = useInView({ threshold: 0.3 });
 
   return (
-    <section className="lg:min-h-screen bg-gradient-to-r from-ice/70 via-white to-pinky/40 flex flex-col justify-center items-center relative shadow-xl shadow-ice/30">
-      <div className="grid grid-cols-1 lg:grid-cols-2 justify-center items-center gap-1">
+    <section className="lg:min-h-screen bg-gradient-to-r from-ice/70 via-white to-pinky/40 flex flex-col justify-center items-center relative shadow-xl shadow-ice/30  md:pt-20 lg:pt-0 ">
+      <div className="grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-1 overflow-hidden md:pt-6 lg:pt-0">
         {/* <div className="absolute w-4 h-6-4 bg-red-600 z-100 top-0 left-0"></div> */}
         <div className="flex flex-col justify-center gap-4 md:text-left px-8 md:px-8 max-w-xl">
           <h1 className="text-6xl md:text-7xl text-foreground font-semibold md:tracking-[-4px] md:leading-[5.5rem]">
@@ -41,7 +41,7 @@ export const HeroSection = () => {
               ref={ref}
               className={cn(
                 "flex gap-3 bg-background rounded-2xl rounded-4xl",
-                "py-5 px-4 items-center relative top-3 -right-2/3 md:top-[60px] md:-right-[160px] z-100 ",
+                "py-5 px-4 items-center relative top-3 -right-2/3 md:top-[60px] md:-right-[120px] lg:top-[60px] lg:-right-[160px] z-100 ",
                 isVisible ? " animate-fade-in-right" : "opacity-0"
               )}
             >
