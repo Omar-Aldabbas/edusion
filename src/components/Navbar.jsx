@@ -17,7 +17,7 @@ export const Navbar = () => {
   return (
     <nav
       className={cn(
-        "py-4 px-6 flex justify-around items-center font-semibold cursor-pointer relative ",
+        "py-4 px-10 flex justify-around items-center font-semibold cursor-pointer relative ",
         isScrolled ? "sticky top-0 bg-background/90 z-5000" : "bg-background"
       )}
     >

@@ -1,16 +1,28 @@
 import { ArrowRightIcon, Check } from "lucide-react";
 import Platform from "../assets/Platform.png";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import { cn } from "../utils/cn";
+import { useInView } from "../hooks/useInView";
 
 export const PlatformSection = () => {
+  const [ref, isVisible] = useInView({ threshold: 0.3 });
   return (
-    <section className={cn("flex flex-wrap lg:flex-nowrap justify-center items-center",
-    " lg:bg-gradient-to-r lg:from-ice lg:via-white lg:to-pinky lg:min-h-screen py-8 px-10 lg:px-25 overflow-hidden",
-    "bg-gradient-to-b from-ice to-white")}>
-      <div className="lg:p-12 space-y-5 lg:min-h-full lg:-mt-20">
-        {/* Head */}
-        <div className="space-y-5">
+    <section
+      className={cn(
+        "flex flex-wrap lg:flex-nowrap justify-center items-center",
+        " lg:bg-gradient-to-r lg:from-ice lg:via-white lg:to-pinky xl:min-h-screen py-8 px-10 lg:px-25 overflow-hidden",
+        "bg-gradient-to-b from-ice to-white"
+      )}
+    >
+      <div
+        ref={ref}
+        className={cn(
+          "xl:p-12 space-y-5 xl:min-h-full xl:-mt-20",
+          isVisible ? "animate-fade-in-up" : "opacity-0"
+        )}
+      >
+        {/* head */}
+        <div className={cn("space-y-5")}>
           <div className="flex items-center gap-2">
             <h4 className="font-semibold text-primary text-xs tracking-widest uppercase">
               Best Online Learning Platforms
@@ -62,9 +74,13 @@ export const PlatformSection = () => {
 
       <div>
         <img
+          ref={ref}
           src={Platform}
           alt="Our platform is Easy to use"
-          className="max-w-md md:max-w-xl md:max-w-lg lg:mt-20"
+          className={cn(
+            "max-w-md md:max-w-xl md:max-w-lg lg:mt-20",
+            isVisible ? "animate-fade-in-up" : "opacity-0"
+          )}
         />
       </div>
     </section>

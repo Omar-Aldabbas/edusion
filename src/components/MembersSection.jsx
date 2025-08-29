@@ -2,7 +2,7 @@ import { MembersCards } from "./cards/MEmbersCards";
 
 export const MembersSection = () => {
   return (
-    <section className="flex flex-col items-center py-4 px-10 lg:px-25 my-10 w-full gap-8 mt-10 relative min-h-screen">
+    <section className="flex flex-col items-center py-4 px-10 lg:px-25 my-10 w-full gap-8 mt-10 relative lg:min-h-[30vh] xl:min-h-screen">
       <div className="container">
         <div className="flex items-center gap-2">
           <h4 className="font-semibold text-primary text-xs tracking-widest uppercase">

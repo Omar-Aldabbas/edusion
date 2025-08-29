@@ -3,7 +3,7 @@ import { BlogCards } from "./cards/BlogCards";
 
 export const BlogSection = () => {
   return (
-    <section className={cn("flex flex-col items-center py-4 px-10 lg:px-25 my-10 w-full gap-8",
+    <section className={cn("flex flex-col items-center py-8 px-10 lg:px-25 mt-10 w-full gap-8 xl:min-h-screen",
       "bg-gradient-to-r from-ice/70 to-pinky/60"
     )}>
       <div className="container">

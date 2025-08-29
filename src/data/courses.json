@@ -8,7 +8,8 @@
     "duration": "4 hours",
     "rating": 4.50,
     "level": "All Levels",
-    "mainPic": "Course1.png"
+    "mainPic": "Course1.png",
+    "createdAt": "2025-08-29T12:00:00Z"
   },
   {
     "id": 2,
@@ -19,7 +20,8 @@
     "duration": "4 hours",
     "rating": 5.00,
     "level": "All Levels",
-    "mainPic": "Course2.png"
+    "mainPic": "Course2.png",
+    "createdAt": "2025-08-28T12:00:00Z"
   },
   {
     "id": 3,
@@ -30,7 +32,8 @@
     "duration": "22 hours 30 minutes",
     "rating": 5.00,
     "level": "Intermediate",
-    "mainPic": "Course3.png"
+    "mainPic": "Course3.png",
+    "createdAt": "2025-08-27T12:00:00Z"
   },
   {
     "id": 4,
@@ -41,7 +44,8 @@
     "duration": "7 hours 30 minutes",
     "rating": 4.33,
     "level": "Beginner",
-    "mainPic": "Course4.png"
+    "mainPic": "Course4.png",
+    "createdAt": "2025-08-26T12:00:00Z"
   },
   {
     "id": 5,
@@ -52,7 +56,8 @@
     "duration": "18 hours 20 minutes",
     "rating": 4.00,
     "level": "Intermediate",
-    "mainPic": "Course5.png"
+    "mainPic": "Course5.png",
+    "createdAt": "2025-08-25T12:00:00Z"
   },
   {
     "id": 6,
@@ -63,7 +68,8 @@
     "duration": "13 hours 20 minutes",
     "rating": 3.33,
     "level": "All Levels",
-    "mainPic": "Course6.png"
+    "mainPic": "Course6.png",
+    "createdAt": "2025-08-24T12:00:00Z"
   },
   {
     "id": 7,
@@ -74,7 +80,8 @@
     "duration": "10 hours 40 minutes",
     "rating": 4.50,
     "level": "Beginner",
-    "mainPic": "Course7.png"
+    "mainPic": "Course7.png",
+    "createdAt": "2025-08-15T12:00:00Z"
   },
   {
     "id": 8,
@@ -85,7 +92,8 @@
     "duration": "15 hours 20 minutes",
     "rating": 5.00,
     "level": "Beginner",
-    "mainPic": "Course8.png"
+    "mainPic": "Course8.png",
+    "createdAt": "2025-08-10T12:00:00Z"
   },
   {
     "id": 9,
@@ -96,7 +104,8 @@
     "duration": "2 hours 20 minutes",
     "rating": 4.00,
     "level": "Expert",
-    "mainPic": "Course9.png"
+    "mainPic": "Course9.png",
+    "createdAt": "2025-08-05T12:00:00Z"
   },
   {
     "id": 10,
@@ -107,7 +116,8 @@
     "duration": "3 hours 20 minutes",
     "rating": 4.50,
     "level": "Intermediate",
-    "mainPic": "Course10.png"
+    "mainPic": "Course10.png",
+    "createdAt": "2025-08-01T12:00:00Z"
   },
   {
     "id": 11,
@@ -118,7 +128,7 @@
     "duration": "17 hours 20 minutes",
     "rating": 4.33,
     "level": "All Levels",
-    "mainPic": "Course11.png"
+    "mainPic": "Course11.png",
+    "createdAt": "2025-07-25T12:00:00Z"
   }
 ]
- 

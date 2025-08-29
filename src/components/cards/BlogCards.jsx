@@ -2,6 +2,9 @@ import { ArrowRightIcon } from "lucide-react";
 import { Link } from "react-router-dom";
 import EventImg1 from "../../assets/EventImg1.png";
 import EventImg2 from "../../assets/EventImg2.png";
+import { useInView } from "../../hooks/useInView";
+import { cn } from "../../utils/cn";
+import { forwardRef } from "react";
 
 const eventData = [
   {
@@ -34,8 +37,11 @@ const eventData = [
   },
 ];
 
-const EventCard = ({ event }) => (
-  <div className="bg-background shadow-md overflow-hidden flex flex-col">
+const EventCard = forwardRef(({ event, className }, ref) => (
+  <div
+    ref={ref}
+    className={cn("bg-background shadow-md overflow-hidden flex flex-col", className)}
+  >
     {event.img && (
       <img
         src={event.img}
@@ -43,10 +49,11 @@ const EventCard = ({ event }) => (
         className="max-h-60 object-cover rounded-t-lg"
       />
     )}
-    <div className={`p-6 flex flex-col justify-between`}>
+    <div className="p-6 flex flex-col justify-between">
       <div className="flex flex-col gap-2">
         <span className="text-xs text-muted">
-          {event.date} | <span className="text-primary font-semibold">{event.subject}</span>
+          {event.date} |{" "}
+          <span className="text-primary font-semibold">{event.subject}</span>
         </span>
         <a
           href="#"
@@ -65,11 +72,14 @@ const EventCard = ({ event }) => (
       </div>
     </div>
   </div>
-);
+));
+
 
 export const BlogCards = () => {
   const noImg = eventData.filter((e) => !e.img);
   const withImg = eventData.filter((e) => e.img);
+
+  const [ref, isVisible] = useInView({threshold: 0.3})
 
   return (
     <div className="flex flex-col md:flex-row gap-6">
@@ -80,7 +90,7 @@ export const BlogCards = () => {
       </div>
       <div className="flex items-start gap-6 md:w-2/3">
         {withImg.map((event) => (
-          <EventCard key={event.id} event={event} />
+          <EventCard key={event.id} event={event} ref={ref} className={cn(isVisible ? "animate-fade-in-up" : "opacity-0")}/>
         ))}
       </div>
     </div>
