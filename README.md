@@ -153,3 +153,13 @@ MIT License
 
 Copyright (c) 2025 Omar Aldabbas
 
+![Navbar](./screenshots/navbar1.png)
+![Courses](./screenshots/courses1.png)
+![Courses](./screenshots/courses2.png)
+![Auth](./screenshots/auth1.png)
+![Auth](./screenshots/auth2.png)
+![Form](./screenshots/form.png)
+![Testimonials](./screenshots/testimonial1.png)
+![Trusted](./screenshots/trusted.png)
+
+
