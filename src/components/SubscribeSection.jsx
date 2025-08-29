@@ -2,7 +2,7 @@ import { Send } from "lucide-react";
 
 export const SubscribeSection = () => {
   return (
-    <section className="flex flex-col items-center justify-center text-center gap-4 py-10 min-h-[50vh]">
+    <section className="flex flex-col items-center justify-center text-center gap-4 py-10 px-10 min-h-[50vh]">
       <h2 className="text-foreground text-4xl font-bold max-w-lg">
         Subscribe to our newsletter, We don't make any spam.
       </h2>

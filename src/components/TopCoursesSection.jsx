@@ -1,4 +1,4 @@
-import { CourseCard } from "./CourseCard";
+import { CourseCard } from "./cards/CourseCard";
 import coursesData from "../data/courses.json";
 import { useInView } from "../hooks/useInView";
 

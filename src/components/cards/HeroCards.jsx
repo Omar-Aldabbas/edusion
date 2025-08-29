@@ -1,6 +1,6 @@
 import { HeroCard } from "./HeroCard";
-import { useInView } from "../hooks/useInView";
-import { cn } from "../utils/cn";
+import { useInView } from "../../hooks/useInView";
+import { cn } from "../../utils/cn";
 
 const features = [
   {

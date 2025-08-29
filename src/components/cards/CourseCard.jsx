@@ -5,7 +5,7 @@ export const CourseCard = ({ course }) => {
     <div className="bg-background overflow-hidden outline outline-gray-200 relative rounded-t-lg">
       <div className="relative">
         <img
-          src={new URL(`../assets/${course.mainPic}`, import.meta.url).href}
+          src={new URL(`../../assets/${course.mainPic}`, import.meta.url).href}
           alt={course.title}
           className="w-full h-60 object-cover"
         />

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Hero from "../assets/Hero.png";
 import { useInView } from "../hooks/useInView";
 import { cn } from "../utils/cn";
-import { HeroCards } from "./HeroCards";
+import { HeroCards } from "./cards/HeroCards";
 
 export const HeroSection = () => {
   const [ref, isVisible] = useInView({ threshold: 0.3 });
@@ -80,7 +80,7 @@ export const HeroSection = () => {
           <div className="bg-pinky w-90 h-90 md:w-100 md:h-100 z-10 absolute rounded-full bottom-1/5 left-1/8 "></div>
         </div>
       </div>
-      <HeroCards/>
+      <HeroCards />
     </section>
   );
 };

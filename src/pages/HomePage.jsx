@@ -1,5 +1,6 @@
 import { AchievementSection } from "../components/AcheivementSection";
 import { CareerSection } from "../components/CareerSection";
+import { EventsSection } from "../components/EventsSection";
 import { FeaturesSection } from "../components/FeaturesSection";
 import { HeroSection } from "../components/HeroSection";
 import { PlatformSection } from "../components/PlatfromSection";
@@ -25,6 +26,7 @@ export const HomePage = () => {
       {/* TopicsSection */}
       <TopicsSection/>
       {/* EventsSection */}
+      <EventsSection/>
       {/* testonomialsSection */}
       {/* MembersSection */}
       {/* blogSection */}

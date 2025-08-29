@@ -1,4 +1,4 @@
-import { FeatureCardGen } from "./FeatureCardGen";
+import { FeatureCardGen } from "./cards/FeatureCardGen";
 
 export const FeaturesSection = () => {
   return (
