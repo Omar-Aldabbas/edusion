@@ -10,7 +10,7 @@ export const HeroSection = () => {
 
   return (
     <section className="xl:min-h-screen bg-gradient-to-r from-ice/70 via-white to-pinky/40 flex flex-col justify-center items-center relative shadow-xl shadow-ice/30 md:pt-20 lg:pt-0">
-      <div className="grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-5 md:pt-6 lg:pt-0 w-full">
+      <div className="grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-5 md:pt-6 lg:px-12 xl:px-30 w-full">
         <div className="flex flex-col justify-center gap-4 md:text-left px-8 md:px-8 max-w-xl">
           <h1 className="text-6xl md:text-7xl text-foreground font-semibold md:tracking-[-4px] md:leading-[5.5rem]">
             Better <span className="text-primary">Learning Future</span> Starts

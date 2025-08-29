@@ -15,7 +15,7 @@ export const Footer = () => {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="bg-[#1a2d62] text-background  py-4 px-10 lg:px-25">
+    <footer className="bg-[#1a2d62] text-background  py-4 px-10 lg:px-12 xl:px-32">
       <div className="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-4 gap-10">
         <div className="flex flex-col gap-6">
           <div className="flex items-center gap-3">
@@ -134,7 +134,6 @@ export const Footer = () => {
 
       <div className="border-t border-ice/10 py-4">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-3">
-          {/* Left */}
           <span className="text-sm">
             © {year} <span className="font-semibold">Edusion</span>. All Rights
             Reserved.

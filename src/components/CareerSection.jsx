@@ -5,7 +5,7 @@ import { cn } from "../utils/cn";
 
 export const CareerSection = () => {
   return (
-    <section className={cn("flex justify-center items-center relative py-4 px-5 lg:px-25 w-full min-h-screen md:min-h-[70vh] xl:min-h-screen lg:mt-10")}>
+    <section className={cn("flex justify-center items-center relative py-4 px-5 lg:px-12 xl:px-40 w-full min-h-screen md:min-h-[70vh] xl:min-h-screen lg:mt-10")}>
       <div className="flex flex-col md:flex-row gap-8 md:gap-1 lg:gap-8 justify-center items-center w-full">
         <img
           src={Carear}

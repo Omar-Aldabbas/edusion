@@ -11,6 +11,8 @@ import { TestimonialsSection } from "../components/TestimonialsSection";
 import { TopCoursesSection } from "../components/TopCoursesSection";
 import { TopicsSection } from "../components/TopicsSection";
 import { TrustedSection } from "../components/TrustedSection";
+import { MembersCards } from "../components/cards/MembersCards";
+
 
 export const HomePage = () => {
   return (
@@ -20,21 +22,13 @@ export const HomePage = () => {
       <AchievementSection />
       <TrustedSection />
       <FeaturesSection />
-      {/* CoursesSection */}
       <TopCoursesSection />
-      {/* PlatforSection */}
       <PlatformSection />
-      {/* SubscribtionSection */}
       <SubscribeSection />
-      {/* TopicsSection */}
       <TopicsSection/>
-      {/* EventsSection */}
       <EventsSection/>
-      {/* testonomialsSection */}
       <TestimonialsSection/>
-      {/* MembersSection */}
-      <MembersSection/>
-      {/* blogSection */}
+      <MembersSection CardsComponent={MembersCards}/>
       <BlogSection/>
     </div>
   );

@@ -10,7 +10,7 @@ export const PlatformSection = () => {
     <section
       className={cn(
         "flex flex-wrap lg:flex-nowrap justify-center items-center",
-        " lg:bg-gradient-to-r lg:from-ice lg:via-white lg:to-pinky xl:min-h-screen py-8 px-10 lg:px-25 overflow-hidden",
+        " lg:bg-gradient-to-r lg:from-ice lg:via-white lg:to-pinky xl:min-h-screen py-8 px-10 lg:px-12 xl:px-28 overflow-hidden",
         "bg-gradient-to-b from-ice to-white"
       )}
     >

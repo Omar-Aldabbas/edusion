@@ -7,7 +7,7 @@ export const TopCoursesSection = () => {
   const [containerRef, isVisible] = useInView({ threshold: 0.2 });
 
   return (
-    <section className="flex flex-col items-center py-4 px-10 lg:px-25 my-10 w-full gap-8">
+    <section className="flex flex-col items-center py-4 px-10 lg:px-12 xl:px-40 my-10 w-full gap-8">
       <div className="container">
         <div className="flex items-center gap-2">
           <h4 className="font-semibold text-primary text-xs tracking-widest uppercase">

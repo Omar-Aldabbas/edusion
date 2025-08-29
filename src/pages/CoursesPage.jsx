@@ -10,7 +10,6 @@ export const CoursesPage = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const coursesPerPage = 9;
 
-  // Sorting
   const sortedCourses = useMemo(() => {
     if (!courses) return [];
     const sorted = [...courses];
@@ -32,7 +31,6 @@ export const CoursesPage = () => {
     }
   }, [courses, sortType]);
 
-  // Pagination
   const totalPages = Math.ceil(sortedCourses.length / coursesPerPage);
   const paginatedCourses = sortedCourses.slice(
     (currentPage - 1) * coursesPerPage,
@@ -55,7 +53,7 @@ export const CoursesPage = () => {
     <div>
       <BreadcrumbHeader name="Courses" subName="Courses" />
 
-      <div className="px-6 md:px-20 py-6 relative lg:my-10">
+      <div className="px-6 md:px-12 py-6 relative lg:my-10  xl:px-40">
 
         <div className="flex justify-end mt-6 mb-4 ">
           <select

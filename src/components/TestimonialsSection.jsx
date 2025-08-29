@@ -6,7 +6,7 @@ export const TestimonialsSection = () => {
   const carouselRef = useRef(null);
 
   return (
-    <section className="flex flex-col items-center py-4 px-10 lg:px-25 my-10 w-full gap-8 mt-5 relative">
+    <section className="flex flex-col items-center py-4 px-10 lg:px-12 xl:px-40 my-10 w-full gap-8 mt-5 relative">
       <div className="container">
         <div className="flex items-center gap-2">
           <h4 className="font-semibold text-primary text-xs tracking-widest uppercase">

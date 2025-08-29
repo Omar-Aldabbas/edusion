@@ -33,7 +33,9 @@ export const ContactForm = () => {
         </div>
 
         <div className="flex-1 flex flex-col">
-          <label className="mb-2 font-semibold text-foreground">Your Email</label>
+          <label className="mb-2 font-semibold text-foreground">
+            Your Email
+          </label>
           <input
             type="email"
             name="email"
@@ -46,7 +48,9 @@ export const ContactForm = () => {
       </div>
 
       <div className="flex flex-col mt-4">
-        <label className="mb-2 font-semibold text-foreground">Your Subject</label>
+        <label className="mb-2 font-semibold text-foreground">
+          Your Subject
+        </label>
         <input
           type="text"
           name="subject"
@@ -58,7 +62,9 @@ export const ContactForm = () => {
       </div>
 
       <div className="flex flex-col mt-4">
-        <label className="mb-2 font-semibold text-foreground">Your Message</label>
+        <label className="mb-2 font-semibold text-foreground">
+          Your Message
+        </label>
         <textarea
           name="message"
           value={formData.message}
@@ -69,13 +75,17 @@ export const ContactForm = () => {
         />
       </div>
 
-      <div className="mt-6 text-center">
+      <div className="mt-6 text-center w-full">
         <button
           type="submit"
           className="relative inline-block px-6 py-2 rounded-full bg-primary font-semibold group"
         >
-          <span className="absolute top-0 left-0 w-full h-full bg-foreground scale-y-0 origin-top transition-transform duration-200/50 ease-out4group-hover:scale-y-100 z-0 rounded-full"></span>
-          <span className="relative z-10 text-white">Send Message</span>
+          <span
+            className="absolute top-0 left-0 w-full h-full bg-foreground 
+                 scale-y-0 origin-top transition-transform duration-300 
+                 ease-out group-hover:scale-y-100 z-0 rounded-full"
+          ></span>
+          <span className="relative z-10 text-background">Send Message</span>
         </button>
       </div>
     </form>

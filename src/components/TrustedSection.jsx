@@ -47,9 +47,9 @@ export const TrustedSection = () => {
   const loopedLogos = logos.concat(logos);
 
   return (
-    <section className="flex justify-center items-center py-4 px-4 sm:px-6 md:px-10 w-full mx-auto my-10 lg:my-30 text-center overflow-hidden">
+    <section className="flex justify-center items-center py-4 px-4 sm:px-6 md:px-10 lg:px-12 xl:px-40 w-full mx-auto my-10 lg:my-30 text-center overflow-hidden">
       <div className="container flex flex-col justify-center items-center gap-6">
-        <h3 className="text-xl font-semibold text-primary bg-ice px-5 py-2 w-[80%] sm:w-[70%] lg:w-[60%] rounded-full">
+        <h3 className="text-xl font-semibold text-primary bg-ice/50 px-3 py-1.5 w-[80%] sm:w-[70%] lg:w-[60%] rounded-full">
           Trusted Company Around The World!
         </h3>
 

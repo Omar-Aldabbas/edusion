@@ -5,7 +5,7 @@ export const BreadcrumbHeader = ({ name, subName }) => {
   return (
     <div
       className={cn(
-        "w-full md:min-h-[25vh] lg:min-h-[50vh] flex flex-col items-center justify-center text-center py-10 relative overflow-hidden",
+        "w-full min-h-[30vh] md:min-h-[25vh] lg:min-h-[20vh] xl:min-h-[50vh] flex flex-col items-center justify-center text-center py-10 relative overflow-hidden",
         "bg-gradient-to-r from-ice via-white to-pinky"
       )}
     >
