@@ -1,8 +1,12 @@
-import { TopicCards } from "./cards/TopicCards";
+import { useRef } from "react";
+import { TopicCards } from "./cards/Testimonialscards";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
-export const TopicsSection = () => {
+export const TestimonialsSection = () => {
+  const carouselRef = useRef(null);
+
   return (
-    <section className="flex flex-col items-center py-4 px-10 lg:px-25 my-10 w-full gap-8 mt-5">
+    <section className="flex flex-col items-center py-4 px-10 lg:px-25 my-10 w-full gap-8 mt-5 relative">
       <div className="container">
         <div className="flex items-center gap-2">
           <h4 className="font-semibold text-primary text-xs tracking-widest uppercase">
@@ -14,9 +18,24 @@ export const TopicsSection = () => {
           What Says <span className="text-primary underline">Our Students</span>
         </h2>
       </div>
-      {/* testinomialscard */}
-      <div>
-\
+
+      <div className="w-full relative">
+        <div className="absolute -top-12 right-2 flex gap-2 z-10">
+          <button
+            className="p-3 bg-white border border-gray-200 rounded-full shadow hover:bg-primary hover:text-background transition-colors duration-500"
+            onClick={() => carouselRef.current?.prev()}
+          >
+            <ChevronLeft />
+          </button>
+          <button
+            className="p-3 bg-white border border-gray-200 rounded-full shadow hover:bg-primary hover:text-background transition-colors duration-500"
+            onClick={() => carouselRef.current?.next()}
+          >
+            <ChevronRight />
+          </button>
+        </div>
+
+        <TopicCards ref={carouselRef} />
       </div>
     </section>
   );

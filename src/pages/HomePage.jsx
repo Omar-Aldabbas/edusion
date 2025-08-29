@@ -5,6 +5,7 @@ import { FeaturesSection } from "../components/FeaturesSection";
 import { HeroSection } from "../components/HeroSection";
 import { PlatformSection } from "../components/PlatfromSection";
 import { SubscribeSection } from "../components/SubscribeSection";
+import { TestimonialsSection } from "../components/TestimonialsSection";
 import { TopCoursesSection } from "../components/TopCoursesSection";
 import { TopicsSection } from "../components/TopicsSection";
 import { TrustedSection } from "../components/TrustedSection";
@@ -28,6 +29,7 @@ export const HomePage = () => {
       {/* EventsSection */}
       <EventsSection/>
       {/* testonomialsSection */}
+      <TestimonialsSection/>
       {/* MembersSection */}
       {/* blogSection */}
     </div>

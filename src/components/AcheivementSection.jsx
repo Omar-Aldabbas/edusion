@@ -1,4 +1,4 @@
-import { AcheivementCard } from "./AcheivementCard";
+import { AcheivementCard } from "./cards/AcheivementCard";
 
 export const AchievementSection = () => {
   return (
