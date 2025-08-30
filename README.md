@@ -61,8 +61,6 @@ Easily explore courses with detailed previews and adaptive layouts for every dev
 Secure login and signup pages, designed for smooth user interaction across devices.  
 <p>
   <img src="./screenshots/auth1.png" width="250" style="margin-right:10px;" />
-  <img src="./screenshots/auth2.png" width="250" style="margin-right:10px;" />
-  <img src="./screenshots/auth3.png" width="250" />
 </p>
 
 ---
