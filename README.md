@@ -38,41 +38,55 @@ The project is deployed on **GitHub Pages**, making it publicly accessible for t
 Edusion comes with a variety of modern features that make the platform user-friendly, responsive, and visually appealing.  
 
 ### 🔹 Responsive Navigation Bar  
-A clean, mobile-friendly navigation bar that adapts to all screen sizes.  
-<img src="./screenshots/navbar1.png" width="300"/>  
-<img src="./screenshots/navbar2.png" width="600"/>  
+A clean, fully responsive navigation bar optimized for **desktop, tablet, and mobile devices**.  
+<p>
+  <img src="./screenshots/navbar1.png" width="200" style="margin-right:10px;" />
+  <img src="./screenshots/navbar2.png" width="200" style="margin-right:10px;" />
+  <img src="./screenshots/navbar3.png" width="200" />
+</p>
 
 ---
 
 ### 🔹 Course Browsing  
-Users can explore different courses with detailed previews and responsive layouts.  
-<img src="./screenshots/courses1.png" width="600"/>  
-<img src="./screenshots/courses2.png" width="600"/>  
+Easily explore courses with detailed previews and adaptive layouts for every device.  
+<p>
+  <img src="./screenshots/course1.png" width="250" style="margin-right:10px;" />
+  <img src="./screenshots/course2.png" width="250" style="margin-right:10px;" />
+  <img src="./screenshots/course3.png" width="250" />
+</p>
 
 ---
 
 ### 🔹 Authentication (Login & Signup)  
-Dedicated pages for user authentication, featuring modern forms with validation.  
-<img src="./screenshots/auth1.png" width="600"/>  
-<img src="./screenshots/auth2.png" width="600"/>  
+Secure login and signup pages, designed for smooth user interaction across devices.  
+<p>
+  <img src="./screenshots/auth1.png" width="250" style="margin-right:10px;" />
+</p>
 
 ---
 
 ### 🔹 Contact Form  
-A responsive form for users to reach out directly for support or inquiries.  
-<img src="./screenshots/form.png" width="600"/>  
+Reach out to support or instructors with a fully responsive contact form.  
+<p>
+  <img src="./screenshots/contact1.png" width="400" />
+</p>
 
 ---
 
 ### 🔹 Testimonials  
-A section displaying student feedback with a visually engaging design.  
-<img src="./screenshots/textimonial1.png" width="600"/>  
+Showcase of student feedback in an engaging, responsive design.  
+<p>
+  <img src="./screenshots/testi.png" width="400" />
+  <img src="./screenshots/Testimonials.png" width="400" />
+</p>
 
 ---
 
 ### 🔹 Trusted By Section  
-A showcase of trusted partners and platforms that endorse Edusion.  
-<img src="./screenshots/trusted.png" width="600"/>  
+A visual showcase of trusted partners and platforms endorsing Edusion.  
+<p>
+  <img src="./screenshots/trust2.png" width="400" />
+</p>
 
 
 
@@ -88,13 +102,10 @@ Edusion is built using a modern frontend stack to ensure performance, scalabilit
 
 
 
-## Screenshots  
+## Screenshots
 
 <p align="center">
-  <img src="./screenshots/navbar2.png" width="32%" />
-  <img src="./screenshots/courses1.png" width="32%" />
-  <img src="./screenshots/courses2.png" width="32%" />
-  <img src="./screenshots/trusted.png" width="32%" />
+  <img src="./screenshots/navbar1.png" width="100%" />
 </p>
 
 
@@ -149,13 +160,6 @@ MIT License
 
 Copyright (c) 2025 Omar Aldabbas
 
-![Navbar](./screenshots/navbar1.png)
-![Courses](./screenshots/courses1.png)
-![Courses](./screenshots/courses2.png)
-![Auth](./screenshots/auth1.png)
-![Auth](./screenshots/auth2.png)
-![Form](./screenshots/form.png)
-![Testimonials](./screenshots/testimonial1.png)
-![Trusted](./screenshots/trusted.png)
+
 
 
