@@ -105,7 +105,7 @@ Edusion is built using a modern frontend stack to ensure performance, scalabilit
 ## Screenshots
 
 <p align="center">
-  <img src="./screenshots/navbar1.png" width="32%" />
+  <img src="./screenshots/navbar1.png" width="100%" />
 </p>
 
 
