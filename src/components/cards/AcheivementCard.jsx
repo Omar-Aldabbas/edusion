@@ -9,7 +9,7 @@ const stats = [
 ];
 
 export const AcheivementCard = () => {
-  const [ref, isVisible] = useInView({ threshold: 0.3 });
+  const [ref, isVisible] = useInView({ threshold: 0.2 });
 
   return (
     <div ref={ref} className="w-full flex flex-wrap gap-6">

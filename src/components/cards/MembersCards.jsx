@@ -42,7 +42,7 @@ const membersData = [
 ];
 
 export const MembersCards = () => {
-  const [ref, isVisible] = useInView({ threshold: 0.3 });
+  const [ref, isVisible] = useInView({ threshold: 0.2 });
   return (
     <div
       ref={ref}
@@ -78,17 +78,17 @@ export const MembersCards = () => {
 
             <div className="flex gap-3 mt-2 justify-center">
               <Facebook
-                className="text-foreground bg-background rounded-full p-2 hover:text-primary transition-colors duration-300 cursor-pointer"
+                className="text-foreground bg-background rounded-full p-2 hover:text-primary active:text-primary transition-colors duration-300 cursor-pointer"
                 fill="currentColor"
                 size={28}
               />
               <Twitter
-                className="text-foreground bg-background rounded-full p-2 hover:text-primary transition-colors duration-300 cursor-pointer"
+                className="text-foreground bg-background rounded-full p-2 hover:text-primary active:text-primary transition-colors duration-300 cursor-pointer"
                 fill="currentColor"
                 size={28}
               />
               <Linkedin
-                className="text-foreground bg-background rounded-full p-2 hover:text-primary transition-colors duration-300 cursor-pointer"
+                className="text-foreground bg-background rounded-full p-2 hover:text-primary active:text-primary transition-colors duration-300 cursor-pointer"
                 fill="currentColor"
                 size={28}
               />

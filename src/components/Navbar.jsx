@@ -31,7 +31,7 @@ export const Navbar = () => {
           : "bg-background z-50"
       )}
     >
-      <div className="hidden md:flex justify-between items-center w-full">
+      <div className="hidden lg:flex justify-between items-center w-full">
         <Link
           to="/"
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
@@ -44,7 +44,7 @@ export const Navbar = () => {
             <li key={link.label}>
               <Link
                 to={link.to}
-                className="text-sm hover:text-primary transition-colors"
+                className="text-sm hover:text-primary active:text-primary transition-colors"
               >
                 {link.label}
               </Link>
@@ -62,12 +62,12 @@ export const Navbar = () => {
               to="/auth"
               className="relative inline-block px-5 py-2 rounded-full bg-primary font-semibold group text-sm"
             >
-              <span className="absolute top-0 left-0 w-full h-full bg-foreground scale-y-0 origin-top transition-transform duration-300 ease-out group-hover:scale-y-100 z-0 rounded-full"></span>
+              <span className="absolute top-0 left-0 w-full h-full bg-foreground scale-y-0 origin-top transition-transform duration-300 ease-out group-hover:scale-y-100 group-active:scale-y-100 z-0 rounded-full"></span>
               <span className="relative z-10 text-white">Login</span>
             </Link>
             <Link
               to="/auth"
-              className="px-5 py-2 rounded-full outline outline-gray-200 hover:outline-none hover:bg-primary hover:text-background text-sm"
+              className="px-5 py-2 rounded-full outline outline-gray-200 hover:outline-none hover:bg-primary hover:text-background active:outline-none active:bg-primary active:text-background text-sm"
             >
               Sign Up
             </Link>
@@ -75,8 +75,8 @@ export const Navbar = () => {
         </div>
       </div>
 
-      <div className="md:hidden w-full flex flex-col px-4">
-        <div className="flex justify-between items-center mb-2 w-full">
+      <div className="lg:hidden w-full flex flex-col px-4">
+        <div className="flex justify-between items-center mb-2 w-full px-4">
           <Link
             to="/"
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
@@ -103,14 +103,14 @@ export const Navbar = () => {
               key={link.label}
               to={link.to}
               onClick={() => setMobileOpen(false)}
-              className="w-full text-center py-2 text-foreground hover:text-primary transition-colors"
+              className="w-full text-center py-2 text-foreground hover:text-primary active:text-primary transition-colors"
             >
               {link.label}
             </Link>
           ))}
         </div>
 
-        <div className="flex justify-between items-center mt-2 w-full px-2">
+        <div className="flex justify-between items-center mt-2 w-full px-4">
           <div className="flex gap-4">
             <Search size={20} />
             <CarTaxiFront size={20} />
@@ -120,12 +120,12 @@ export const Navbar = () => {
               to="/auth"
               className="relative inline-block px-5 py-2 rounded-full bg-primary font-semibold group text-sm"
             >
-              <span className="absolute top-0 left-0 w-full h-full bg-foreground scale-y-0 origin-top transition-transform duration-300 ease-out z-0 rounded-full group-hover:scale-y-100"></span>
+              <span className="absolute top-0 left-0 w-full h-full bg-foreground scale-y-0 origin-top transition-transform duration-300 ease-out z-0 rounded-full group-hover:scale-y-100 group-active:scale-y-100"></span>
               <span className="relative z-10 text-white">Login</span>
             </Link>
             <Link
               to="/auth"
-              className="px-5 py-1.5 rounded-full outline-[1px] outline-gray-100 hover:outline-none hover:bg-white hover:text-primary text-sm"
+              className="px-5 py-1.5 rounded-full outline-[1px] outline-gray-100 hover:outline-none hover:bg-white hover:text-primary active:outline-none active:bg-white active:text-primary text-sm"
             >
               Sign Up
             </Link>

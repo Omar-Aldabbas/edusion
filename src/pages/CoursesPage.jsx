@@ -84,9 +84,9 @@ export const CoursesPage = () => {
             {currentPage > 1 && (
               <button
                 onClick={() => handlePageChange(currentPage - 1)}
-                className="p-1 rounded bg-ice hover:bg-primary transition-colors"
+                className="p-1 rounded bg-ice hover:bg-primary active:bg-primary transition-colors"
               >
-                <ChevronLeft size={16} className="text-foreground hover:text-background" />
+                <ChevronLeft size={16} className="text-foreground hover:text-background active:text-background" />
               </button>
             )}
 
@@ -98,7 +98,7 @@ export const CoursesPage = () => {
                   className={`px-3 py-1 text-sm ${
                     currentPage === i + 1
                       ? "text-primary border-b-2 border-primary font-semibold "
-                      : "text-foreground hover:text-primary border-b-2 border-transparent"
+                      : "text-foreground hover:text-primary active:text-primary border-b-2 border-transparent"
                   }`}
                 >
                   {i + 1}
@@ -108,9 +108,9 @@ export const CoursesPage = () => {
             {currentPage < totalPages && (
               <button
                 onClick={() => handlePageChange(currentPage + 1)}
-                className="p-1 rounded bg-ice hover:bg-primary transition-colors"
+                className="p-1 rounded bg-ice hover:bg-primary active:bg-primary transition-colors"
               >
-                <ChevronRight size={16} className="text-foreground hover:text-background" />
+                <ChevronRight size={16} className="text-foreground hover:text-background active:text-background" />
               </button>
             )}
           </div>

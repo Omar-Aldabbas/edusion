@@ -47,7 +47,7 @@ export const FeatureCardGen = () => {
         return (
           <div
             key={idx}
-            className="group flex flex-col items-start gap-4 p-8 rounded-lg outline outline-gray-200 transition-transform duration-300 hover:-translate-y-[5px]"
+            className="group flex flex-col items-start gap-4 p-8 rounded-lg outline outline-gray-200 transition-transform duration-300 hover:-translate-y-[5px] active:-translate-y-[5px]"
           >
             <div className="flex items-center gap-3">
               <div className={`shrink-0 p-4 rounded-full ${item.bgColor}`}>

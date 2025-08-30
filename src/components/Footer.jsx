@@ -145,7 +145,7 @@ export const Footer = () => {
                 <a
                   key={idx}
                   href="#"
-                  className="hover:text-primary hover:underline transition-colors duration-400"
+                  className="hover:text-primary hover:underline active:underline transition-colors duration-400"
                 >
                   {link}
                 </a>

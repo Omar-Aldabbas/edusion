@@ -29,7 +29,7 @@ export const CourseCard = ({ course }) => {
           )}
         </div>
 
-        <h3 className="text-lg font-bold text-foreground px-4 mt-2 mb-3 hover:text-primary cursor-pointer">
+        <h3 className="text-lg font-bold text-foreground px-4 mt-2 mb-3 hover:text-primary active:text-primary cursor-pointer">
           {course.title}
         </h3>
 

@@ -1,9 +1,11 @@
 import { CourseCard } from "./cards/CourseCard";
 import coursesData from "../data/courses.json";
 import { useInView } from "../hooks/useInView";
+import { Link } from "react-router-dom";
+
 
 export const TopCoursesSection = () => {
-  const topCourses = coursesData.slice(0, 6); 
+  const topCourses = coursesData.slice(0, 6);
   const [containerRef, isVisible] = useInView({ threshold: 0.2 });
 
   return (
@@ -32,13 +34,15 @@ export const TopCoursesSection = () => {
       </div>
 
       <div className="mt-8">
-        <a
-          href="/"
+        <Link
+          to="/courses"
           className="relative inline-block px-6 py-2 rounded-full bg-primary font-semibold group"
         >
-          <span className="absolute top-0 left-0 w-full h-full bg-foreground scale-y-0 origin-top transition-transform duration-300 ease-out group-hover:scale-y-100 z-0 rounded-full"></span>
-          <span className="relative z-10 text-background text-sm">View All Course</span>
-        </a>
+          <span className="absolute top-0 left-0 w-full h-full bg-foreground scale-y-0 origin-top transition-transform duration-300 ease-out group-hover:scale-y-100 group-active:scale-y-100 z-0 rounded-full"></span>
+          <span className="relative z-10 text-background text-sm">
+            View All Courses
+          </span>
+        </Link>
       </div>
     </section>
   );

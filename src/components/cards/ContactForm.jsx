@@ -18,7 +18,7 @@ export const ContactForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="min-w-8xl py-6 px-12 rounded-md">
+    <form onSubmit={handleSubmit} className="min-w-8xl py-6 px-6 md:px-12 rounded-md">
       <div className="flex flex-col md:flex-row gap-4">
         <div className="flex-1 flex flex-col">
           <label className="mb-2 font-semibold text-foreground">Name</label>
@@ -83,7 +83,7 @@ export const ContactForm = () => {
           <span
             className="absolute top-0 left-0 w-full h-full bg-foreground 
                  scale-y-0 origin-top transition-transform duration-300 
-                 ease-out group-hover:scale-y-100 z-0 rounded-full"
+                 ease-out group-hover:scale-y-100 group-active:scale-y-100 z-0 rounded-full"
           ></span>
           <span className="relative z-10 text-background">Send Message</span>
         </button>

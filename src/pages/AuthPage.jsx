@@ -51,7 +51,7 @@ export const AuthPage = () => {
               />
               <button
                 type="submit"
-                className="w-full py-2 rounded-lg bg-primary text-background font-semibold hover:bg-primary/90 transition-colors"
+                className="w-full py-2 rounded-lg bg-primary text-background font-semibold hover:bg-primary/90 active:bg-primary/90 transition-colors"
               >
                 Sign Up
               </button>
@@ -59,7 +59,7 @@ export const AuthPage = () => {
                 Already have an account?{" "}
                 <button
                   type="button"
-                  className="text-primary font-semibold hover:underline"
+                  className="text-primary font-semibold hover:underline active:underline"
                   onClick={() => setIsSignup(false)}
                 >
                   Login
@@ -98,7 +98,7 @@ export const AuthPage = () => {
                 </label>
                 <button
                   type="button"
-                  className="text-primary hover:underline"
+                  className="text-primary hover:underline active:underline"
                   onClick={() => setIsForgot(true)}
                 >
                   Forgot Password?
@@ -106,7 +106,7 @@ export const AuthPage = () => {
               </div>
               <button
                 type="submit"
-                className="w-full py-2 rounded-lg bg-primary text-background font-semibold hover:bg-primary/90 transition-colors"
+                className="w-full py-2 rounded-lg bg-primary text-background font-semibold hover:bg-primary/90 active:bg-primary/90 transition-colors"
               >
                 Login
               </button>
@@ -114,7 +114,7 @@ export const AuthPage = () => {
                 Don't have an account?{" "}
                 <button
                   type="button"
-                  className="text-primary font-semibold hover:underline"
+                  className="text-primary font-semibold hover:underline active:underline"
                   onClick={() => setIsSignup(true)}
                 >
                   Sign Up
@@ -140,7 +140,7 @@ export const AuthPage = () => {
               />
               <button
                 type="submit"
-                className="w-full py-2 rounded-lg bg-primary text-background font-semibold hover:bg-primary/90 transition-colors"
+                className="w-full py-2 rounded-lg bg-primary text-background font-semibold hover:bg-primary/90 active:bg-primary/90 transition-colors"
               >
                 Reset Password
               </button>
@@ -148,7 +148,7 @@ export const AuthPage = () => {
                 Remembered your password?{" "}
                 <button
                   type="button"
-                  className="text-primary font-semibold hover:underline"
+                  className="text-primary font-semibold hover:underline active:underline"
                   onClick={() => {
                     setIsForgot(false);
                     setIsSignup(false);

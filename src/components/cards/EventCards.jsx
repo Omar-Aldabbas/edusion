@@ -51,7 +51,7 @@ const newsData = [
 
 const EventCard = ({ news, hasImage }) => (
   <div
-    className={`bg-background overflow-hidden shadow hover:shadow-md
+    className={`bg-background overflow-hidden shadow hover:shadow-md active:shadow-md
       ${hasImage ? "rounded-t-lg h-[440px]" : "h-[240px]"}`}
   >
     <div className="relative">
@@ -78,7 +78,7 @@ const EventCard = ({ news, hasImage }) => (
     <div className="p-6 space-y-3">
       <a
         href="#"
-        className="text-xl font-semibold text-foreground hover:text-primary transition-colors duration-800"
+        className="text-xl font-semibold text-foreground hover:text-primary active:text-primary transition-colors duration-800"
       >
         {news.title}
       </a>

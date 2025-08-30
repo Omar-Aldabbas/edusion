@@ -22,13 +22,13 @@ export const TestimonialsSection = () => {
       <div className="w-full relative">
         <div className="absolute -top-12 right-2 flex gap-2 z-10">
           <button
-            className="p-3 bg-white border border-gray-200 rounded-full shadow hover:bg-primary hover:text-background transition-colors duration-500"
+            className="p-3 bg-white border border-gray-200 rounded-full shadow hover:bg-primary hover:text-background active:bg-primary active:text-background transition-colors duration-500"
             onClick={() => carouselRef.current?.prev()}
           >
             <ChevronLeft />
           </button>
           <button
-            className="p-3 bg-white border border-gray-200 rounded-full shadow hover:bg-primary hover:text-background transition-colors duration-500"
+            className="p-3 bg-white border border-gray-200 rounded-full shadow hover:bg-primary hover:text-background active:bg-primary active:text-background transition-colors duration-500"
             onClick={() => carouselRef.current?.next()}
           >
             <ChevronRight />

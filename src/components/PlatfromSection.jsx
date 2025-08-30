@@ -5,7 +5,7 @@ import { cn } from "../utils/cn";
 import { useInView } from "../hooks/useInView";
 
 export const PlatformSection = () => {
-  const [ref, isVisible] = useInView({ threshold: 0.3 });
+  const [ref, isVisible] = useInView({ threshold: 0.2 });
   return (
     <section
       className={cn(
@@ -64,8 +64,8 @@ export const PlatformSection = () => {
         {/* button */}
         <div>
           <Link className="relative inline-block py-3 px-5 font-semibold overflow-hidden rounded-full group text-center max-w-max">
-            <span className="absolute top-1/2 left-0 w-11 h-11 bg-ice rounded-full transform -translate-y-1/2 transition-all duration-500 ease-out group-hover:w-full group-hover:left-0 group-hover:bg-primary group-hover:h-full z-0"></span>
-            <span className="relative uppercase z-10 text-foreground group-hover:text-background inline-flex items-center justify-center gap-1 font-bold text-xs">
+            <span className="absolute top-1/2 left-0 w-11 h-11 bg-ice rounded-full transform -translate-y-1/2 transition-all duration-500 ease-out group-hover:w-full group-hover:left-0 group-hover:bg-primary group-hover:h-full z-0 group-active:w-full group-active:left-0 group-active:bg-primary group-active:h-full"></span>
+            <span className="relative uppercase z-10 text-foreground group-hover:text-background group-active:text-background inline-flex items-center justify-center gap-1 font-bold text-xs">
               explore our courses <ArrowRightIcon size={16} />
             </span>
           </Link>

@@ -42,7 +42,7 @@ const membersData = [
 ];
 
 export const MembersCards2 = () => {
-  const [ref, isVisible] = useInView({ threshold: 0.3 });
+  const [ref, isVisible] = useInView({ threshold: 0.2 });
   return (
     <div
       ref={ref}
@@ -66,20 +66,20 @@ export const MembersCards2 = () => {
         
             <div className="absolute -top-4 right-2 bg-primary rounded-b-full flex flex-col gap-7 py-7 px-2 z-20">
               <Facebook
-                className="text-white cursor-pointer hover:scale-110 transition-transform p-1" fill="currentColor"
+                className="text-white cursor-pointer hover:scale-110 active:scale-110 transition-transform p-1" fill="currentColor"
                 size={20}
               />
               <Twitter
-                className="text-white cursor-pointer hover:scale-110 transition-transform p-1" fill="currentColor"
+                className="text-white cursor-pointer hover:scale-110 active:scale-110 transition-transform p-1" fill="currentColor"
                 size={20}
               />
               <Linkedin
-                className="text-white cursor-pointer hover:scale-110 transition-transform p-1" fill="currentColor"
+                className="text-white cursor-pointer hover:scale-110 active:scale-110 transition-transform p-1" fill="currentColor"
                 size={20}
               />
             </div>
 
-            <div className="absolute inset-0 bg-white/40 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-in-out z-10"></div>
+            <div className="absolute inset-0 bg-white/40 transform translate-y-full group-hover:translate-y-0 group-active:translate-y-0 transition-transform duration-300 ease-in-out z-10"></div>
           </div>
 
           <div className="flex flex-col items-center justify-center h-[30%] p-4 text-center bg-white">
@@ -88,9 +88,9 @@ export const MembersCards2 = () => {
             </span>
 
             <div className="relative flex items-center justify-center w-full my-2">
-              <span className="block h-px bg-primary w-8 group-hover:w-12 transition-all duration-500"></span>
+              <span className="block h-px bg-primary w-8 group-hover:w-12 group-active:w-12 transition-all duration-500"></span>
               <span className="w-2 h-2 rounded-full bg-primary mx-2"></span>
-              <span className="block h-px bg-primary w-8 group-hover:w-12 transition-all duration-500"></span>
+              <span className="block h-px bg-primary w-8 group-hover:w-12 group-active:w-12 transition-all duration-500"></span>
             </div>
 
             <span className="text-xs text-muted">{member.job}</span>

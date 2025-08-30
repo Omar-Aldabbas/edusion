@@ -14,7 +14,7 @@ export const NotFoundPage = () => {
           to="/"
           className="relative inline-block px-6 py-3 rounded-full bg-primary font-semibold group text-sm"
         >
-          <span className="absolute top-0 left-0 w-full h-full bg-foreground scale-y-0 origin-top transition-transform duration-300 ease-out group-hover:scale-y-100 z-0 rounded-full"></span>
+          <span className="absolute top-0 left-0 w-full h-full bg-foreground scale-y-0 origin-top transition-transform duration-300 ease-out group-hover:scale-y-100 group-active:scale-y-100 z-0 rounded-full"></span>
           <span className="relative z-10 text-background">Go to Home</span>
         </Link>
       </div>
